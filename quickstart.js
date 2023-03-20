@@ -54,20 +54,20 @@ async function main(){
     }
 
     // Update the price if one doesn't exist, or it's different from the last one
-    let price_id = ""
+    let price_id = product?.default_price
     if (`${previous_price}`!=`${PRICE_USD}`){
         console.log('\tUpdating product price...')
         price_id = (await stripe.prices.create({
             unit_amount: `${PRICE_USD}`,
             currency   : 'usd',
             product    : product.id,
-        })).id
+        }))
         product = await stripe.products.update(product.id,{default_price:price_id})
     }
     
     // 4. Build website into dist
     console.log('Building webiste -> dist... (3/3)')
-    execSync(`VITE_STRIPE_PUBLIC_API_KEY=${PUBLIC_API_KEY} VITE_STRIPE_PRICE_ID=${price_id} npm --prefix ./src run build`)
+    execSync(`VITE_STRIPE_PUBLIC_API_KEY="${PUBLIC_API_KEY}" VITE_STRIPE_PRICE_ID="${price_id}" npm --prefix ./src run build`)
 }
 
 main()
