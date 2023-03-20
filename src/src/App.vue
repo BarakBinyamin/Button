@@ -43,8 +43,8 @@ export default{
       public_key       : import.meta.env.VITE_STRIPE_PUBLIC_API_KEY,
       product_price_id : import.meta.env.VITE_STRIPE_PRICE_ID,
       lineitems        : [{'price': this.product_price_id, 'quantity': 1 }],
-      cancelURL        : `${window.location.origin}/?success=false`,
-      succuessURL      : `${window.location.origin}/?success=${randomPass}`,
+      cancelURL        : `${window.location.origin}${window.location.pathname}?success=false`,
+      succuessURL      : `${window.location.origin}${window.location.pathname}?success=${randomPass}`,
       // Logic variables
       paramExists      : "",
       success          : "",
