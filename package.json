@@ -1,0 +1,23 @@
+{
+  "name": "button",
+  "version": "1.0.0",
+  "description": "Vite + Vue3 + Stripe browser only example. It's a button that lets you buy this free code for a dollar",
+  "main": "quickstart.js",
+  "scripts": {
+    "quickstart": "quickstart.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BarakBinyamin/Button.git"
+  },
+  "author": "Barak Binyamin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BarakBinyamin/Button/issues"
+  },
+  "homepage": "https://github.com/BarakBinyamin/Button#readme",
+  "dependencies": {
+    "commander": "^10.0.0",
+    "stripe": "^11.15.0"
+  }
+}
