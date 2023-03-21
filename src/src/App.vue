@@ -56,6 +56,11 @@ export default{
     this.paramExists   = urlParams.has('success')  
     // Check if checkout was successful
     this.success       = urlParams.get('success')===randomPass
+
+    // Sizing css
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+    window.addEventListener('resize', () => {let vh = window.innerHeight * 0.01;document.documentElement.style.setProperty('--vh', `${vh}px`);});
   },
   methods: {
     submit () {
