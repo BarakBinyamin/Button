@@ -22,7 +22,7 @@ const PRIVATE_API_KEY = options.privatekey
 const PUBLIC_API_KEY  = options.publickey
 const PRICE_USD       = options?.price ? options?.price*100 : 100
 const PRODUCT_NAME    = "A Vue Stripe Button"
-const PRODUCT_DESCRIPTION = "Code for a button"
+const PRODUCT_DESCRIPTION = "ie. the code for a purchasable button"
 
 async function main(){
     // 2.Download dependencies
