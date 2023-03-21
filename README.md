@@ -30,6 +30,7 @@ git commit -m "Let's make some money" && git push
 - [Vue Stripe Library](https://vuestripe.com/)
 - [Stripe testing info](https://stripe.com/docs/testing)
 - [Stripe checkout logo](https://dashboard.stripe.com/settings/branding)
+- [Checkout Stripe payouts](https://dashboard.stripe.com/balance/overview)
 - [Software liscense brochure](https://choosealicense.com/licenses/)
 - [Vite environment variables](https://vitejs.dev/guide/env-and-mode.html)
 - [Vite change build directory](https://stackoverflow.com/questions/66863200/changing-the-input-and-output-directory-in-vite)
