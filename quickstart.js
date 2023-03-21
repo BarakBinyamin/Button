@@ -61,8 +61,8 @@ async function main(){
             unit_amount: `${PRICE_USD}`,
             currency   : 'usd',
             product    : product.id,
-        }))
-        product = await stripe.products.update(product.id,{default_price:price_id})
+        })).id
+        product = await stripe.products.update(product.id,{ default_price : price_id})
     }
     
     // 4. Build website into dist
