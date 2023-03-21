@@ -1,5 +1,8 @@
 # Button
-Vite + Vue3 + Stripe browser only example. It's a button that lets you buy this free code for a dollar
+Vite + Vue3 + Stripe browser only example. It's a button that lets you buy this free code for a dollar, [see it live](https://barakbinyamin.github.io/Button/)
+
+<a href="https://barakbinyamin.github.io/Button/">
+<p style="text-align:center"><img src="demo.png" width="50%"/></p></a>
 
 ## Quickstart
 1. Fork this repo
@@ -12,12 +15,7 @@ node quickstart.js --publickey PUBLIC_APIKEY --privatekey PRIVATE_APIKEY
 ```
 
 ### Docker
-#todo
-```bash
-git clone YOUR-FORK-URL && cd button
-docker build ---
-node quickstart.js --publickey PUBLIC_APIKEY --privatekey PRIVATE_APIKEY
-```
+#TODO
 
 ## Stripe Automation
 Stripe offers an [API](https://stripe.com/docs/api/products/create) to configure stripe settings, and add/update products. 
@@ -27,16 +25,6 @@ You can add a product on [the stripe dashboard](https://support.stripe.com/quest
 Stripe also offers an extensive [API](https://stripe.com/docs/api/products/create?lang=node), this project uses the [stripe-node](https://github.com/stripe/stripe-node) wrapper to create a product named "button" for the price of $1 USD
 
 View your public and private api key @ [https://dashboard.stripe.com/apikeys](https://dashboard.stripe.com/apikeys)
-
-## Approach
-```html
-<template>
-  <!-- If success exists -->
-    <!-- If success=true show download button and message-->
-    <!-- If success=false  -->
-  <!-- Else Show Buy This Button -->
-</template>
-```
 
 ## Resources
 - [Vite](https://vitejs.dev/guide/)
