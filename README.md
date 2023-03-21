@@ -1,20 +1,21 @@
 # Button
-Vite + Vue3 + Stripe browser only example. It's a button that lets you buy this free code for a dollar, [see it live](https://barakbinyamin.github.io/Button/)
+Vite + Vue3 + Stripe client only example. It's a button that lets you buy this free code for a dollar, [see it live](https://barakbinyamin.github.io/Button/)
 
-<a href="https://barakbinyamin.github.io/Button/">
-  <p style="text-align:center">
-    <img src="demo.png" width="50%"/>
-  </p>
-</a>
+<p style="text-align:center" align="center">
+  <a href="https://barakbinyamin.github.io/Button/">
+    <img src="demo.png" width="25%"/>
+  </a>
+</p>
 
 ## Quickstart
 1. Fork this repo
-2. [Create a stripe account](https://stripe.com/), [Enable browser only checkout](https://stripe.com/docs/payments/checkout/client#enable-checkout) (be sure to include your domain), collect [your public and private api keys](https://dashboard.stripe.com/apikeys)
-3. Add this product to stripe and rebuild the website with the quickstart script
+2. [Create a stripe account](https://stripe.com/), [Enable client only checkout](https://stripe.com/docs/payments/checkout/client#enable-checkout) (add your domain like **example.github.io**), collect [your public and private api keys](https://dashboard.stripe.com/apikeys)
+3. Add this product to your stripe account and rebuild the website with your public api key with the quickstart script
 ```bash
 git clone YOUR-FORK-URL && cd button
 npm install
 node quickstart.js --publickey PUBLIC_APIKEY --privatekey PRIVATE_APIKEY
+git commit -m "Let's make some money" && git push
 ```
 
 ### Docker
