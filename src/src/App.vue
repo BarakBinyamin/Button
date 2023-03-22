@@ -1,8 +1,8 @@
 <template>
 
-  <!-- If success query exists -->
+  <!-- If ?success query exists in URL -->
   <div v-if="paramExists">
-    <!-- If success=true  show download button and message-->
+    <!-- If success=true show download button and message-->
     <div v-if="success" class="title">Transaction succeeded!</div>
     <!-- If success=false show failure prompt -->
     <div v-else         class="title">Transaction failed, try again...</div>
@@ -13,7 +13,9 @@
     </div>
   </div>
     
+  <!-- Show "buy this button" if (?succes is not in the URL) OR (?success!=randomPass)   -->
   <div v-if="!paramExists || !success" class="button" @click="submit">Buy this button</div>
+  <!-- Else show the download button, which just opens a github zipfile link "downloadRepo" -->
   <div v-else class="button" @click="download">Download the code!</div>
 
   <!-- Stripe checkout handler -->
@@ -45,19 +47,19 @@ export default{
       lineitems        : [{'price': this.product_price_id, 'quantity': 1 }],
       cancelURL        : `${window.location.origin}${window.location.pathname}?success=false`,
       succuessURL      : `${window.location.origin}${window.location.pathname}?success=${randomPass}`,
-      // Logic variables
+      // UI Logic variables
       paramExists      : "",
       success          : "",
     }
   },
   mounted(){
-    // Check if redirected from checkout
+    // Check if redirected from checkout by looking for ?sucess in URL 
     let urlParams      = new URLSearchParams(window.location.search)
     this.paramExists   = urlParams.has('success')  
     // Check if checkout was successful
     this.success       = urlParams.get('success')===randomPass
 
-    // Sizing css
+    // Sizing css for mobile
     let vh = window.innerHeight * 0.01;
     document.documentElement.style.setProperty('--vh', `${vh}px`);
     window.addEventListener('resize', () => {let vh = window.innerHeight * 0.01;document.documentElement.style.setProperty('--vh', `${vh}px`);});

@@ -8,9 +8,9 @@ Vite + Vue3 + Stripe client only example. It's a button that lets you buy this f
 </p>
 
 ## Quickstart
-1. Fork this repo
-2. [Create a stripe account](https://stripe.com/), [Enable client only checkout](https://stripe.com/docs/payments/checkout/client#enable-checkout) (add your domain like **example.github.io**), collect [your public and private api keys](https://dashboard.stripe.com/apikeys)
-3. Add this product to your stripe account and rebuild the website with your public api key with the quickstart script
+1. (5-10 minutes) [Fork this repo](https://github.com/BarakBinyamin/Button/fork), [enable git pages](https://docs.github.com/en/pages/quickstart) for the main branch docs folder
+2. (10-20 minutes) [Create a stripe account](https://stripe.com/), [Enable client only checkout](https://stripe.com/docs/payments/checkout/client#enable-checkout) (add your domain like **example.github.io**), collect [your public and private api keys](https://dashboard.stripe.com/apikeys)
+3. (1 minute) Run the follwing code which adds a product to your stripe account and rebuilds the website with your public api key and product_id
 ```bash
 git clone YOUR-FORK-URL && cd button
 npm install
@@ -36,3 +36,5 @@ git commit -m "Let's make some money" && git push
 - [Vite change build directory](https://stackoverflow.com/questions/66863200/changing-the-input-and-output-directory-in-vite)
 - [Access URL query paramaters](https://stackoverflow.com/questions/35914069/how-can-i-get-query-parameters-from-a-url-in-vue-js)
 - [Access url properties using javascript](https://stackoverflow.com/questions/11401897/get-the-current-domain-name-with-javascript-not-the-path-etc)
+
+
