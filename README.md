@@ -22,9 +22,10 @@ git commit -m "Let's make some money" && git push
 #TODO
 
 ## Resources
-- [Vite](https://vitejs.dev/guide/)
 - [Vue](https://vuejs.org/)
+- [Vite](https://vitejs.dev/guide/)
 - [Stripe](https://stripe.com/)
+- [Nodejs](https://nodejs.org/en)
 - [Stripe API](https://stripe.com/docs/api)
 - [Stripe API Keys](https://stripe.com/docs/keys)
 - [Vue Stripe Library](https://vuestripe.com/)
