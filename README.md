@@ -19,7 +19,12 @@ git commit -m "Let's make some money" && git push
 ```
 
 ### Docker
-#TODO
+```bash
+git clone YOUR-FORK-URL && cd button
+docker build --tag button .
+docker run -it  -v $PWD/docs:/button/docs button --publickey PUBLIC_APIKEY --privatekey PRIVATE_APIKEY
+git commit -m "Let's make some money" && git push
+```
 
 ## Resources
 - [Vue](https://vuejs.org/)

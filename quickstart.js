@@ -26,13 +26,10 @@ const PRODUCT_DESCRIPTION = "ie. the code for a purchasable button"
 
 async function main(){
     // 2.Download dependencies
-    const fileToCheck = "/.dockerenv"
-    const inDocker    = fs.existsSync(fileToCheck)
-    if (!inDocker){
-        console.log('Downloading dependencies... (1/3)')
-        spawnSync('npm', ['install'])                            
-        spawnSync('npm', ['--prefix', './src', 'install', './src'])
-    }
+    console.log('Downloading dependencies... (1/3)')
+    spawnSync('npm', ['install'])                            
+    spawnSync('npm', ['--prefix', './src', 'install', './src'])
+
 
     // 3. Add button product to stripe if it doesn't exist
     console.log('Adding product to stripe... (2/3)')
