@@ -1,5 +1,5 @@
 # Button
-Vite + Vue3 + Stripe client only example. It's a button that lets you buy this free code for a dollar, [see it live](https://barakbinyamin.github.io/Button/)
+A Github hosted ecommerce example. It's a website where you can buy this free code for a dollar, [see it live](https://barakbinyamin.github.io/Button/)
 
 <p style="text-align:center" align="center">
   <a href="https://barakbinyamin.github.io/Button/">
