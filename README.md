@@ -26,6 +26,15 @@ docker run -it  -v $PWD/docs:/button/docs button --publickey PUBLIC_APIKEY --pri
 git commit -m "Let's make some money" && git push
 ```
 
+## Project Directory
+| Name                                   | Purpose                                       | 
+| :--                                    | :--                                           |
+|[docs](docs)                            | Where website is built into/served from      |
+|[src](src)                              | Where website is developed                    |
+|[quickstart.js](quickstart.js)          | Script to add a "button" product to stripe    |
+|[package.json](package.json )           | Nodejs dependency management file             |
+|[dockerfile](dockerfile)                | Docker container setup file                   |
+
 ## Resources
 - [Vue](https://vuejs.org/)
 - [Vite](https://vitejs.dev/guide/)
