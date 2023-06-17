@@ -9,7 +9,7 @@ A Github hosted ecommerce example. It's a website where you can buy this free co
 
 ## Quickstart
 1. (5-10 minutes) [Fork this repo](https://github.com/BarakBinyamin/Button/fork), [enable git pages](https://docs.github.com/en/pages/quickstart) for the main branch docs folder
-2. (10-20 minutes) [Create a stripe account](https://stripe.com/), [Enable client only checkout](https://stripe.com/docs/payments/checkout/client#enable-checkout) (add your domain **<USERNAME>.github.io**), collect [your public and private api keys](https://dashboard.stripe.com/apikeys)
+2. (10-20 minutes) [Create a stripe account](https://stripe.com/), [Enable client only checkout](https://stripe.com/docs/payments/checkout/client#enable-checkout) (add your domain **\<USERNAME\>.github.io**), collect [your public and private api keys](https://dashboard.stripe.com/apikeys)
 3. (1 minute) Run the follwing code which adds a product to your stripe account and rebuilds the website with your public api key and product_id
 ```bash
 git clone YOUR-FORK-URL && cd button
