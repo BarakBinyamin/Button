@@ -1,5 +1,5 @@
 # Button
-A Github hosted ecommerce example. It's a website where you can buy this free code for a dollar, [see it live](https://barakbinyamin.github.io/Button/)
+A Github hosted ecommerce example. It's a website where you can sell this free code for a dollar, [see it live](https://barakbinyamin.github.io/Button/)
 
 <p style="text-align:center" align="center">
   <a href="https://barakbinyamin.github.io/Button/">
